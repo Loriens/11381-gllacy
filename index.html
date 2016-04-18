@@ -5,8 +5,127 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            <a href="#">Доставка и оплата</a>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="common-buttons">
+        <a class="btn" href="#">Поиск</a>
+        <a class="btn" href="#">Вход</a>
+        <a class="btn" href="#"><img src="img/basket.png" width="50" height="50" alt="Корзина"> Корзина</a>
+      </div>
+      <div class="working-information">
+        <p>С 10 до 20, ежедневно</p>
+        <p>8 812 450-25-25</p>
+      </div>
+    </header>
+    <main>
+      <section class="index-main-banner">
+        <p>Крем-брюле и пломбир с малиновым джемом!</p>
+        <a class="btn" href="#">Давайте оба!</a>
+      </section>
+      <section class="index-banner container">
+        <h2>Малинка даром!</h2>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a class="btn" href="#">Хочу варенье!</a>
+      </secton>
+      <section class="index-banner container">
+        <h2>Шоколадки даром!</h2>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
+        <a class="btn" href="#">Хочу шокладки!</a>
+      </secton>
+      <section class="item">
+        <img src="img/item-hit-1.img" width="50" height="50" alt="Сливочное с апельсиновым джемом и цитросувой стружкой">
+        <p class="item-price"><span>310 р</span>/кг</p>
+        <a href="#">Сливочное с апельсиновым джемом и цитросувой стружкой</a>
+      </section>
+      <section class="item">
+        <img src="img/item-hit-2.img" width="50" height="50" alt="Слиовночно-кофейное с кусочками шоколада">
+        <p class="item-price"><span>380 р</span>/кг</p>
+        <a href="#">Слиовночно-кофейное с кусочками шоколада</a>
+      </section>
+      <section class="item">
+        <img src="img/item-hit-3.img" width="50" height="50" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+        <p class="item-price"><span>355 р</span>/кг</p>
+        <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+      </section>
+      <section class="item">
+        <img class="index-hit" src="img/item-hit-4.img" width="50" height="50" alt="Сливочное крем-брюле с карамельной подливкой">
+        <p class="item-price"><span>415 р</span>/кг</p>
+        <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+      </section>
+      <article class="index-about">
+        <p>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</p>
+        <div class="index-about-left">
+          <img src="img/about-advantage-1.png" width="25" height="25" alt="Мороженое">
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+          <img src="img/about-advantage-2.png" width="25" height="25" alt="Лист">
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+        </div>
+        <div class="index-about-right">
+          <img src="img/about-advantage-3.png" width="25" height="25" alt="Рогатый скот">
+          <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+          <img src="img/about-advantage-4.png" width="25" height="25" alt="Температура">
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+        </div>
+      </article>
+      <section class="index-new-post container">
+        <p>Новое в нашем блоге</p>
+        <h2>10 способов сортировки щербетов к столу</p>
+      </section>
+      <section class="index-newsletter container">
+        <p>Подпишитесь на нашу сладкую рассылку
+        и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+        <form action="#" method="get">
+          <input type="email" placeholder="Электронная почта">
+          <input class="btn" type="submit" value="Отправить">
+        </form>
+      </section>
+      <div class="index-map">
+        <secton>
+          <p>
+            Адрес главного офиса<br>
+            и офлайн магазина:<br>
+            <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+          </p>
+          <p>
+            Для заказов по телефону:<br>
+            <b>8 812 450-25-25</b><br>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a class="btn" href="#">Форма обратной связи</a>
+        </section>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <section class="footer-social">
+        <a class="social-btn social-btn-tw" href="#">Твиттер</a>
+        <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        <a class="social-btn social-btn-fb" href="#">Фэйсбук</a>
+        <a class="social-btn social-btn-vk" href="#">ВКонтакте</a>
+      </section>
+      <section class="footer-info">
+        <a class="footer-href footer-href-heart" href="#">Для поставщиков</a>
+        <a class="footer-href" href="#">О производстве</a>
+      </section>
+      <section class="footer-documents">
+        <a class="footer-href" href="#">Наши документы</a>
+        <a class="footer-href" href="#">Экологические стандарты</a>
+      </section>
+      <section class="footer-copyright">
+        <img src="img/html-academy.png" width="100" height="100" alt="HTML Academy">
+        <p>Сделано в <a class="footer-href" href="#">HTML Academy</a></p>
+      </section>
+    </footer>
   </body>
 </html>
