@@ -129,7 +129,8 @@ main {
 main > .container {
   padding-top: 1px;
 
-  background-image: url("../img/ice-creams.png");
+  background-image: url("../img/ice-creams.png"),
+    url("../img/gradient.png");
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -201,6 +202,7 @@ main .btn {
 
   border-radius: 50px;
   box-shadow: 0px 2px 2px 0px rgba(67, 6, 0, 0.36);
+  text-shadow: 0px 2px 5px #a0200b;
 }
 
 .slide-btns {
@@ -230,6 +232,7 @@ main .btn {
   width: 520px;
   height: 188px;
   margin-top: 40px;
+  margin-bottom: 40px;
   padding: 15px 21px 23px 19px;
 }
 
@@ -256,12 +259,6 @@ main .btn {
   line-height: 22px;
 }
 
-main .btn {
-  display: inline-block;
-  width: 167px;
-  height: 46px;
-}
-
 .index-banner .btn {
   display: block;
   float: right;
@@ -272,6 +269,53 @@ main .btn {
   font-size: 18px;
   line-height: 46px;
   text-align: center;
+}
+
+.item {
+  display: inline-block;
+  float: left;
+  width: 267px;
+  height: 322px;
+  margin-right: 26px;
+
+  text-align: center;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.item img {
+  width: 267px;
+  height: 267px;
+
+  border-radius: 50%;
+}
+
+.item-price {
+  position: relative;
+  top: -94px;
+
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: left;
+}
+
+.item-price span {
+  font-size: 45px;
+}
+
+.item-price img {
+  width: 31px;
+  height: 33px;
+
+  border-radius: 0;
+}
+
+.item a {
+  position: relative;
+  top: -100px;
 }
 
 /* Outline только для сеток */
