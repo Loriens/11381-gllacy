@@ -27,13 +27,6 @@ body {
 
   min-height: 35px;
 }
-
-main > .container {
-  background-image: url("../img/ice-creams.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
 .main-header img {
   float: left;
   width: 153px;
@@ -129,10 +122,24 @@ main > .container {
   margin-right: 0;
 }
 
+main {
+  margin-top: 10px;
+}
+
+main > .container {
+  padding-top: 1px;
+
+  background-image: url("../img/ice-creams.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+
 .index-main-banner {
   position: relative;
 
-  height: 535px;
+  height: 215px;
+  margin-top: 319px;
 }
 
 .index-main-banner p {
