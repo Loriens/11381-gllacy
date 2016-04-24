@@ -165,8 +165,9 @@ main .btn {
 .index-main-banner {
   position: relative;
 
-  height: 215px;
   margin-top: 274px;
+
+  min-height: 215px;
 }
 
 .index-main-banner p {
@@ -230,10 +231,11 @@ main .btn {
 
 .index-banner {
   width: 520px;
-  height: 188px;
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 15px 21px 23px 19px;
+
+  min-height: 188px;
 }
 
 .index-banner:first-child {
@@ -277,6 +279,7 @@ main .btn {
   width: 267px;
   height: 322px;
   margin-right: 26px;
+  margin-bottom: 40px;
 
   text-align: center;
 }
@@ -316,6 +319,68 @@ main .btn {
 .item a {
   position: relative;
   top: -100px;
+}
+
+.index-about {
+  padding: 30px 20px 30px;
+
+  font-size: 16px;
+  line-height: 22px;
+
+  color: black;
+  background-image: url("../img/pattern-wafer.png");
+  background-repeat: repeat-x;
+
+  min-height: 246px;
+  border-radius: 15px;
+}
+
+.index-about p {
+  margin: 0;
+}
+
+.index-about p {  
+  padding-left: 57px;
+
+  background-repeat: no-repeat;
+}
+
+.index-about > p {
+  margin-bottom: 15px;
+  padding-left: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.index-about-left p:nth-child(1), .index-about-right p:nth-child(1) {
+  margin-bottom: 15px;
+}
+
+.index-about-left p:nth-child(1) {
+  background-image: url("../img/ice-cream.svg");
+}
+
+.index-about-left p:nth-child(2) {
+  background-image: url("../img/leaf.svg");
+}
+
+.index-about-right p:nth-child(1) {
+  background-image: url("../img/cow.svg");
+}
+
+.index-about-right p:nth-child(2) {
+  background-image: url("../img/thermometer.svg");
+}
+
+.index-about-left {
+  float: left;
+  width: 500px;
+}
+
+.index-about-right {
+  float: right;
+  width: 560px;
 }
 
 /* Outline только для сеток */
