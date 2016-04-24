@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-.clearfix {
+.clearfix:after {
   content: "";
 
   display: table;
@@ -26,6 +26,12 @@ body {
   padding: 0px;
 
   min-height: 35px;
+}
+
+main > .container {
+  background-image: url("../img/ice-creams.png");
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .main-header img {
@@ -122,8 +128,69 @@ body {
 .common-buttons .btn:last-child {
   margin-right: 0;
 }
-.working-information {
-  float: right;
+
+.index-main-banner {
+  position: relative;
+
+  height: 535px;
+}
+
+.index-main-banner p {
+  position: absolute;
+  left: 239px;
+  bottom: 55px;
+
+  width: 670px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.index-main-banner .btn {
+  position: absolute;
+  left: 429px;
+  bottom: 0;
+
+  display: block;
+  width: 282px;
+  height: 67px;
+  margin: 0 auto;
+
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 67px;
+  text-align: center;
+
+  background-image: linear-gradient(#e74a35, #f26843);
+  border: 0;
+
+  border-radius: 50px;
+  box-shadow: 0px 2px 2px 0px rgba(67, 6, 0, 0.36);
+}
+
+.slide-btns {
+  position: absolute;
+  bottom: 13px;
+}
+
+.slide-btns input {
+  display: none;
+}
+
+.slide-btns label {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+
+  border: 2px solid white;
+
+  border-radius: 50%;
+}
+
+.slide-btns label:first-child {
+  background-color: white;
 }
 
 /* Outline только для сеток */
