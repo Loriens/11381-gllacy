@@ -322,6 +322,7 @@ main .btn {
 }
 
 .index-about {
+  margin-bottom: 40px;
   padding: 30px 20px 30px;
 
   font-size: 16px;
@@ -381,6 +382,98 @@ main .btn {
 .index-about-right {
   float: right;
   width: 560px;
+}
+
+.index-new-post, .index-newsletter {
+  color: black;
+}
+
+.index-new-post {
+  width: 538px;
+  float: left;
+  padding: 22px 0px 0px 20px;
+
+  font-size: 16px;
+  line-height: 22px;
+
+  background-image: url("../img/new-post-strawberry.png");
+
+  min-height: 198px;
+}
+
+.index-new-post p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.index-new-post a {
+  display: inline-block;
+  width: 286px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: black;
+
+  border: 0;
+  text-decoration: underline;
+}
+
+.index-newsletter {
+  float: right;
+  width: 560px;
+
+  background-image: url("../img/newsletter-mail.png");
+
+  min-height: 220px;
+}
+
+.index-newsletter .wrap {
+  width: 508px;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 25px 21px 34px;
+
+  background-color: #f8f7f4;
+
+  min-height: 151px;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.index-newsletter p {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.index-newsletter input[type="email"] {
+  width: 345px;
+  height: 13px;
+  margin-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  border: 1px solid rgba(70, 70, 70, 0.48);
+
+  border-radius: 10px;
+}
+
+.index-newsletter input[type="submit"] {
+  width: 130px;
+  height: 45px;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  color: white;
 }
 
 /* Outline только для сеток */
