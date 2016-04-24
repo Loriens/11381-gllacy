@@ -563,13 +563,9 @@ main .btn {
   border: 0;
 }
 
-.footer-info-text {
-  border-bottom: 1px solid #9eb2a7;
-}
-
-.footer-info, .footer-documents-text {
+.footer-info {
   float: left;
-  width: 160px;
+  width: 140px;
   margin-right: 30px;
 }
 
@@ -586,6 +582,11 @@ main .btn {
 
 .footer-documents {
   float: left;
+  width: 180px;
+}
+
+.footer-info-text, .footer-documents-text {
+  border-bottom: 1px solid #9eb2a7;
 }
 
 .footer-copyright {
