@@ -538,6 +538,8 @@ main .btn {
 
 .footer-social a {
   margin-right: 10px;
+
+  border: 0;
 }
 
 .footer-social img {  
