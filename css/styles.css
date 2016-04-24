@@ -4,7 +4,136 @@ body {
   line-height: 20px;
 
   color: white;
+  background-color: #849d8f;
+
+  min-width: 1200px;
 }
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
+
+.clearfix {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  margin-top: 10px;
+  padding: 0px;
+
+  min-height: 35px;
+}
+
+.main-header img {
+  float: left;
+  width: 153px;
+  height: 63px;
+
+  vertical-align: bottom;
+}
+
+.main-navigation {
+  float: left;
+  width: 688px;
+  margin-right: 13px;
+  list-style: none;
+}
+
+.main-navigation ul {
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+}
+
+.main-navigation li {
+  display: inline-block;
+
+  padding: 23px 15px 22px;
+
+  min-height: 20px;
+}
+
+.common-buttons {
+  float: right;
+  width: 267px;
+  margin-left: 13px;
+  padding: 13px 0px 18px 6px;
+
+  min-height: 34px;
+}
+
+.common-buttons .btn {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  padding: 8px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  background-color: #9db1a5;
+
+  border-radius: 16px;
+  vertical-align: middle;
+}
+
+.btn-search {
+  width: 17px;
+}
+
+.btn-search img {
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+.common-buttons .btn-login {
+  padding-top: 6px;
+  padding-bottom: 7px;
+
+  line-height: 19px;
+}
+
+.btn-login img {
+  width: 20px;
+  height: 19px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.common-buttons .btn-basket {
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+  line-height: 20px;
+}
+
+.btn-basket img {
+  width: 21px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.common-buttons .btn:last-child {
+  margin-right: 0;
+}
+.working-information {
+  float: right;
+}
+
+/* Outline только для сеток */
+.outline-red {
+  outline: 1px solid red;
+}
+.outline-black {
+  outline: 1px solid black;
+}
+
 
 h1 {
   font-size: 35px;
@@ -14,4 +143,14 @@ h1 {
 h2 {
   font-size: 35px;
   line-height: 41px;
+}
+
+a {
+  font-size: 16px;
+  line-height: 18px;
+
+  color: white;
+
+  border-bottom: 1px solid #9eb2a7;
+  text-decoration: none;
 }
