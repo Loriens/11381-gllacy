@@ -385,6 +385,8 @@ main .btn {
 }
 
 .index-new-post, .index-newsletter {
+  margin-bottom: 40px;
+
   color: black;
 }
 
@@ -474,6 +476,54 @@ main .btn {
   line-height: 22px;
 
   color: white;
+}
+
+.index-map {
+  width: 1200px;
+  height: 430px;
+  margin: 0 auto;
+
+  background-image: url("../img/map.jpg");
+}
+
+.index-map p {
+  margin: 0;
+}
+
+.index-map-information {
+  float: right;
+  width: 280px;
+  margin-top: 63px;
+  margin-right: 27px;
+  padding-top: 30px;
+  padding-left: 25px;
+
+  background-color: white;
+
+  border-radius: 10px;
+  min-height: 270px;
+}
+
+.index-map-information p {
+  margin-bottom: 25px;
+
+  font-size: 14px;
+  line-height: 20px;
+
+  color: black;
+}
+
+.index-map-information b, .index-map-information .btn {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.index-map-information .btn {
+  display: inline-block;
+  width: 250px;
+  height: 45px;
+
+  line-height: 45px;
 }
 
 /* Outline только для сеток */
