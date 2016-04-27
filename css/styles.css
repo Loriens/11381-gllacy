@@ -607,15 +607,6 @@ main .btn {
   margin: 0;
 }
 
-/* Outline только для сеток */
-.outline-red {
-  outline: 1px solid red;
-}
-
-.outline-black {
-  outline: 1px solid black;
-}
-
 .breadcrumbs {    
   font-size: 14px;
   line-height: 16px;
