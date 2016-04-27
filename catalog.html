@@ -3,9 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container clearfix">
       <img src="img/logo.svg" width="153" height="63" alt="Глейси">
       <nav class="main-navigation">
         <ul>
@@ -21,53 +23,53 @@
         </ul>
       </nav>
       <div class="common-buttons">
-        <a class="btn" href="#">Поиск</a>
-        <a class="btn" href="#">Вход</a>
-        <a class="btn" href="#">Корзина</a>
-      </div>
-      <div class="working-information">
-        <p>С 10 до 20, ежедневно</p>
-        <p>8 812 450-25-25</p>
+        <a class="btn btn-search" href="#"><img src="img/search.svg" width="16" height="16" alt="Поиск"></a>
+        <a class="btn btn-login" href="#"><img src="img/login.svg" width="20" height="19" alt="Поиск">Вход</a>
+        <a class="btn btn-basket" href="#"><img src="img/basket.svg" width="21" height="20" alt="Поиск">Пусто</a>
       </div>
     </header>
-    <main>
+    <main class="container">
       <nav class="breadcrumbs">
         <ul>
           <li>
-            <a href="#">Главная</a>
+            <a href="#">Главная</a> &raquo;
           </li>
           <li>
-            <a href="#">Каталог</a>
+            <a href="#">Каталог</a> &raquo;
           </li>
           <li>
             Сливочное
           </li>
       </nav>
       <h1>Сливочное мороженое</h1>
-      <form class="filters" action="#" method="get">
-        <label>Сортировка:
+      <form class="filters outline-red" action="#" method="get">
+        <label class="outline-black">Сортировка:
           <select name="sort">
             <option value="popular">По популярности</option>
             <option value="worth">По цене</option>
           </select>
         </label>
-        <label>Цена 100 руб. - 500 руб.
+        <label class="outline-black">Цена 100 руб. - 500 руб.
           <input type="range" min="0" max="10000">
         </label>
-        <fieldset><legend>Жирность:</legend>
-          <label><input type="radio" name="fat" value="0"> 0%</label>
-          <label><input type="radio" name="fat" value="<10" checked> до 10%</label>
-          <label><input type="radio" name="fat" value="<30"> до 30%</label>
-          <label><input type="radio" name="fat" value=">30"> выше 30%</label>
+        <fieldset class="outline-black"><legend>Жирность:</legend>
+          <div class="container-buttons">
+            <label><input type="radio" name="fat" value="0"> 0%</label>
+            <label><input type="radio" name="fat" value="<10" checked> до 10%</label>
+            <label><input type="radio" name="fat" value="<30"> до 30%</label>
+            <label><input type="radio" name="fat" value=">30"> выше 30%</label>
+          </div>
         </fieldset>
-        <fieldset><legend>Сахарные присыпки:</legend>
-          <label><input type="checkbox" name="sugar" value="chocolate"> шоколадные</label>
-          <label><input type="checkbox" name="sugar" value="sugar" checked> сахарные присыпки</label>
-          <label><input type="checkbox" name="sugar" value="fruit"> фрукты</label>
-          <label><input type="checkbox" name="sugar" value="syrop"> сиропы</label>
-          <label><input type="checkbox" name="sugar" value="jam"> джемы</label>
+        <fieldset class="outline-black"><legend>Сахарные присыпки:</legend>
+          <div class="container-buttons">
+            <label><input type="checkbox" name="sugar" value="chocolate"> шоколадные</label>
+            <label><input type="checkbox" name="sugar" value="sugar" checked> сахарные присыпки</label>
+            <label><input type="checkbox" name="sugar" value="fruit"> фрукты</label>
+            <label><input type="checkbox" name="sugar" value="syrop"> сиропы</label>
+            <label><input type="checkbox" name="sugar" value="jam"> джемы</label>
+          </div>
         </fieldset>
-        <input class="btn btn-filter" type="submit" value="Применить">
+        <input class="btn-filter" type="submit" value="Применить">
       </form>
       <section class="item">
         <img  src="img/item-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитросувой стружкой">
@@ -134,28 +136,28 @@
           <li>
             <
           </li>
-          <li>
-            <a class="btn" href="#">1</a>
+          <li class="paginator-btn-active">
+            <a href="#">1</a>
           </li>
           <li>
-            <a class="btn btn-active" href="#">2</a>
+            <a href="#">2</a>
           </li>
           <li>
-            <a class="btn" href="#">3</a>
+            <a href="#">3</a>
           </li>
           <li>
-            <a class="btn" href="#">4</a>
+            <a href="#">4</a>
           </li>
           <li>
-            <a class="btn" href="#">5</a>
+            <a href="#">5</a>
           </li>
           <li>
-            <a class="btn" href="#">></a>
+            <a href="#">></a>
           </li>
         </ul>
       </nav>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container clearfix">
       <section class="footer-social">
         <a class="social-btn social-btn-inst" href="#"><img src="img/tw.svg" width="31" height="31" alt="Твиттер"></a>
         <a class="social-btn social-btn-inst" href="#"><img src="img/inst.svg" width="31" height="31" alt="Инстаграм"></a>
@@ -163,16 +165,16 @@
         <a class="social-btn social-btn-vk" href="#"><img src="img/vk.svg" width="31" height="31" alt="ВКонтакте"></a>
       </section>
       <section class="footer-info">
-        <a class="footer-href footer-href-heart" href="#">Для поставщиков</a>
-        <a class="footer-href" href="#">О производстве</a>
+        <img src="img/heart.svg" width="15" height="13" alt="Сердце"><a href="#"><span class="footer-info-text">Для поставщиков</span></a>
+        <a href="#"><span class="footer-info-text">О производстве</span></a>
       </section>
       <section class="footer-documents">
-        <a class="footer-href" href="#">Наши документы</a>
-        <a class="footer-href" href="#">Экологические стандарты</a>
+        <a href="#"><span class="footer-documents-text">Наши документы</span></a>
+        <a href="#"><span class="footer-documents-text">Экологические стандарты</span></a>
       </section>
       <section class="footer-copyright">
         <img src="img/html-academy.svg" width="108" height="37" alt="HTML Academy">
-        <p>Сделано в <a class="footer-href" href="#">HTML Academy</a></p>
+        <p>Сделано в <a class="footer-href" href="#">HTML Academy</a> &copy; 2016</p>
       </section>
     </footer>
   </body>

@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
 }
 
-.clearfix:after {
+.clearfix::after {
   content: "";
 
   display: table;
@@ -528,6 +528,8 @@ main .btn {
 
 .main-footer {
   padding-bottom: 25px;
+
+  border-top: 1px solid #a9bbb1;
 }
 
 .footer-social {
@@ -614,14 +616,158 @@ main .btn {
   outline: 1px solid black;
 }
 
+.breadcrumbs {    
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #e4e9e6;
+
+  list-style: none;
+}
+
+.breadcrumbs ul {
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+}
+
+.breadcrumbs a {
+  color: #e4e9e6;
+}
+
+.filters {
+  margin-bottom: 40px;
+}
+
+.filters > label, fieldset {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filters > label:first-child {
+  width: 193px;
+}
+
+.filters > label:nth-child(2) {
+  width: 218px;
+  height: 58px;
+}
+
+select[name="sort"], input[type="range"], .container-buttons, .btn-filter {
+  height: 37px;
+
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 5px;
+
+  background-color: #a9bab0;
+
+  border-radius: 15px;
+}
+
+select[name="sort"] {
+  width: 193px;
+  padding: 8px 16px 7px 16px;
+}
+
+input[type="range"] {
+  width: 218px;
+}
+
+fieldset, legend {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+fieldset label {
+  margin-right: 10px;
+  padding: 0;
+}
+
+.container-buttons {
+  height: 21px;
+  padding: 10px 16px 6px;
+}
+
+fieldset:nth-of-type(2) {
+  margin-top: 18px;
+}
+
+label {
+  vertical-align: top;
+}
+
+.btn-filter {
+  height: 37px;
+  margin: 0;
+  margin-left: 15px;
+  padding: 5px 28px 5px;
+
+  background-color: #a9bab0;
+  border: 2px solid white;
+}
+
+.item:nth-of-type(4n) {
+  margin-right: 0;
+}
+
+.catalog-pages ul {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  text-align: right;
+
+  list-style: none;
+}
+
+.catalog-pages li:first-child {
+  color: #9db1a5;
+}
+
+.catalog-pages li {
+  display: inline-block;
+  width: 17px;
+  height: 22px;
+  padding: 5px 5px 0px;
+
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.catalog-pages a {
+  border: 0;
+}
+
+.paginator-btn-active {
+  background-color: white;
+
+  border-radius: 50%;
+}
+
+.paginator-btn-active a {
+  color: black;
+}
 
 h1, h2 {
+  margin: 0;
+
   font-size: 35px;
   line-height: 41px;
 }
 
-h2 {
-  margin: 0;
+h1 {
+  margin-bottom: 35px;
 }
 
 a {
