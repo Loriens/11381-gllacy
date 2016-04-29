@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 20px;
 
   color: white;
@@ -21,12 +22,43 @@ body {
   clear: both;
 }
 
+a {
+  font-size: 16px;
+  line-height: 18px;
+
+  color: white;
+
+  border-bottom: 1px solid #a9bbb1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffbc9e;
+  border-bottom-color: #a7a294;
+}
+
+a:active {
+  color: #bdab96;
+  border-bottom-color: #a7a294;
+}
+
+.btn-bright {
+  color: #323232;
+  border-bottom-color: #b2b2b2;
+}
+
+.btn-bright:hover, .btn-bright:active {
+  color: #e84d37;
+  border-bottom-color: #f9cdc4;
+}
+
 .main-header {
   margin-top: 10px;
   padding: 0px;
 
   min-height: 35px;
 }
+
 .main-header img {
   float: left;
   width: 153px;
@@ -46,14 +78,51 @@ body {
   margin: 0;
   margin-left: 30px;
   padding: 0;
+
+  font-size: 0;
 }
 
 .main-navigation li {
   display: inline-block;
+  margin-top: 5px;
+  margin-left: -4px;
+  padding-top: 8px;
+  padding-bottom: 18px;
 
-  padding: 23px 15px 22px;
+  min-height: 18px;
+  vertical-align: top;
+}
 
-  min-height: 20px;
+.main-navigation li:first-child {
+  margin-left: -14px;
+}
+
+.main-navigation a {
+  display: block;
+  margin: 8px 14px 6px;
+  padding: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.main-navigation a:hover, .main-navigation a:active {
+  margin: 0;
+  padding: 7px 14px 6px;
+
+  color: black;
+
+  border-radius: 14px;
+}
+
+.main-navigation a:hover {
+  background: #f7f6f3;
+}
+
+.main-navigation a:active {
+  background: #ededed;
+
+  box-shadow: inset 0px 2px 1px #696969;
 }
 
 .common-buttons {
@@ -80,11 +149,13 @@ body {
   vertical-align: middle;
 }
 
-.btn-search {
+.common-buttons .btn-search {
   width: 17px;
+
+  font-size: 0px;
 }
 
-.btn-search img {
+.common-buttons .btn-search img {
   width: 17px;
   height: 17px;
   vertical-align: middle;
@@ -761,12 +832,8 @@ h1 {
   margin-bottom: 35px;
 }
 
-a {
-  font-size: 16px;
-  line-height: 18px;
+/* Удалить */
 
-  color: white;
-
-  border-bottom: 1px solid #9eb2a7;
-  text-decoration: none;
+.outline-red {
+  outline: 1px solid red;
 }
