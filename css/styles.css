@@ -251,15 +251,6 @@ main {
   margin-top: 10px;
 }
 
-main > .container {
-  padding-top: 1px;
-
-  background-image: url("../img/ice-creams.png"),
-    url("../img/gradient.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-}
-
 main .btn {
   text-align: center;
 
@@ -280,8 +271,13 @@ main .btn {
   text-align: right;
 }
 
+.working-information p:first-child {
+  float: right;
+}
+
 .working-information p:last-child {
-  margin-top: 11px;
+  margin-top: 9px;
+  padding-top: 8px;
 
   font-size: 22px;
   line-height: 24px;  
@@ -293,6 +289,17 @@ main .btn {
   margin-top: 274px;
 
   min-height: 215px;
+}
+
+.index-main-banner img {
+  position: absolute;
+  top: -310px;
+  left: 250px;
+
+  width: 648px;
+  height: 584px;
+
+  z-index: -10;
 }
 
 .index-main-banner p {
@@ -310,17 +317,18 @@ main .btn {
 
 .index-main-banner .btn {
   position: absolute;
-  left: 429px;
+  left: 434px;
   bottom: 0;
 
   display: block;
-  width: 282px;
-  height: 67px;
+  width: 216px;
+  height: 31px;
   margin: 0 auto;
+  padding: 9px 31px 23px 31px;
 
   font-weight: 700;
   font-size: 32px;
-  line-height: 67px;
+  line-height: 44px;
   text-align: center;
 
   background-image: linear-gradient(#e74a35, #f26843);
@@ -341,9 +349,13 @@ main .btn {
 }
 
 .slide-btns label {
+  position: relative;
+  top: -8px;
+
   display: inline-block;
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
+  margin-right: 3px;
 
   border: 2px solid white;
 
