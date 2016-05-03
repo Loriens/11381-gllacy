@@ -311,8 +311,10 @@ main .btn {
   margin: 0 auto;
   margin-bottom: 40px;
 
+  font-weight: 800;
   font-size: 60px;
   line-height: 60px;
+  text-align: center;
 }
 
 .index-main-banner .btn {
@@ -368,11 +370,11 @@ main .btn {
 
 .index-banner {
   width: 520px;
-  margin-top: 40px;
+  margin-top: 41px;
   margin-bottom: 40px;
   padding: 15px 21px 23px 19px;
 
-  min-height: 188px;
+  min-height: 191px;
 }
 
 .index-banner:first-child {
@@ -388,12 +390,13 @@ main .btn {
 }
 
 .index-banner h2 {
-  margin-bottom: 25px;
+  margin-bottom: -2px;
 }
 
 .index-banner p {
-  margin-bottom: 32px;
+  margin-bottom: 44px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
 }
@@ -401,13 +404,14 @@ main .btn {
 .index-banner .btn {
   display: block;
   float: right;
-  width: 167px;
-  height: 46px;
+  padding: 10px 25px 11px 21px;
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 46px;
+  line-height: 24px;
   text-align: center;
+
+  min-height: 24px;
 }
 
 .item {
@@ -428,6 +432,7 @@ main .btn {
 .item img {
   width: 267px;
   height: 267px;
+  margin-left: -8px;
 
   border-radius: 50%;
 }
@@ -460,12 +465,12 @@ main .btn {
 
 .index-about {
   margin-bottom: 40px;
-  padding: 30px 20px 30px;
+  padding: 25px 20px 22px;
 
   font-size: 16px;
   line-height: 22px;
 
-  color: black;
+  color: #323232;
   background-image: url("../img/pattern-wafer.png");
   background-repeat: repeat-x;
 
@@ -478,21 +483,39 @@ main .btn {
 }
 
 .index-about p {  
+  width: 483px;
   padding-left: 57px;
 
   background-repeat: no-repeat;
 }
 
 .index-about > p {
-  margin-bottom: 15px;
+  width: auto;
+  margin-bottom: 10px;
   padding-left: 0;
 
+  font-weight: 500;
   font-size: 24px;
   line-height: 30px;
 }
 
+.index-about-left {
+  float: left;
+  margin-right: 15px;
+}
+
+.index-about-right {
+  float: right;
+}
+
 .index-about-left p:nth-child(1), .index-about-right p:nth-child(1) {
-  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+.index-about-left p:nth-child(2), .index-about-right p:nth-child(2) {
+  padding-top: 25px;
+
+  background-position: 0px 10px;
 }
 
 .index-about-left p:nth-child(1) {
@@ -509,16 +532,6 @@ main .btn {
 
 .index-about-right p:nth-child(2) {
   background-image: url("../img/thermometer.svg");
-}
-
-.index-about-left {
-  float: left;
-  width: 500px;
-}
-
-.index-about-right {
-  float: right;
-  width: 560px;
 }
 
 .index-new-post, .index-newsletter {
