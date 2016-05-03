@@ -647,7 +647,7 @@ main .btn {
 
 .index-map-information {
   float: right;
-  width: 280px;
+  width: 277px;
   margin-top: 63px;
   margin-right: 27px;
   padding-top: 30px;
@@ -668,17 +668,36 @@ main .btn {
   color: black;
 }
 
+.index-map-information p:first-child {
+  margin-bottom: 18px;
+}
+
+.index-map-information p:nth-child(2) {
+  margin-bottom: 23px;
+}
+
 .index-map-information b, .index-map-information .btn {
   font-size: 18px;
   line-height: 24px;
 }
 
+.index-map-phone {
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 2px;
+
+  line-height: 22px;
+}
+
 .index-map-information .btn {
   display: inline-block;
   width: 250px;
-  height: 45px;
+  margin-left: 1px;
+  padding-top: 9px;
 
-  line-height: 45px;
+  line-height: 24px;
+
+  min-height: 36px;
 }
 
 .main-footer {
@@ -689,7 +708,7 @@ main .btn {
 
 .footer-social {
   float: left;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-right: 205px;
 }
 
