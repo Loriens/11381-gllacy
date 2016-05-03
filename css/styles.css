@@ -432,7 +432,7 @@ main .btn {
 .item img {
   width: 267px;
   height: 267px;
-  margin-left: -8px;
+  margin-left: -2px;
 
   border-radius: 50%;
 }
@@ -454,6 +454,7 @@ main .btn {
 .item-price img {
   width: 31px;
   height: 33px;
+  margin-left: -8px;
 
   border-radius: 0;
 }
@@ -465,7 +466,7 @@ main .btn {
 
 .index-about {
   margin-bottom: 40px;
-  padding: 25px 20px 22px;
+  padding: 25px 15px 22px 20px;
 
   font-size: 16px;
   line-height: 22px;
@@ -483,7 +484,7 @@ main .btn {
 }
 
 .index-about p {  
-  width: 483px;
+  width: 488px;
   padding-left: 57px;
 
   background-repeat: no-repeat;
@@ -501,7 +502,7 @@ main .btn {
 
 .index-about-left {
   float: left;
-  margin-right: 15px;
+  margin-right: 20px;
 }
 
 .index-about-right {
@@ -541,7 +542,7 @@ main .btn {
 }
 
 .index-new-post {
-  width: 538px;
+  width: 540px;
   float: left;
   padding: 22px 0px 0px 20px;
 
@@ -555,12 +556,12 @@ main .btn {
 
 .index-new-post p {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .index-new-post a {
   display: inline-block;
-  width: 286px;
+  width: 290px;
 
   font-weight: 700;
   font-size: 24px;
@@ -582,10 +583,10 @@ main .btn {
 }
 
 .index-newsletter .wrap {
-  width: 508px;
+  width: 511px;
   margin: 0 auto;
   margin-top: 5px;
-  padding: 25px 21px 34px;
+  padding: 29px 18px 29px 21px;
 
   background-color: #f8f7f4;
 
@@ -596,16 +597,16 @@ main .btn {
 
 .index-newsletter p {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 
   font-size: 16px;
   line-height: 22px;
 }
 
 .index-newsletter input[type="email"] {
-  width: 345px;
+  width: 349px;
   height: 13px;
-  margin-right: 10px;
+  margin-right: 4px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
@@ -615,10 +616,14 @@ main .btn {
 
   border: 1px solid rgba(70, 70, 70, 0.48);
 
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .index-newsletter input[type="submit"] {
+  position: relative;
+  left: 6px;
+  top: -1px;
+
   width: 130px;
   height: 45px;
 
