@@ -5,9 +5,20 @@ body {
   line-height: 20px;
 
   color: white;
-  background-color: #849d8f;
+}
 
-  min-width: 1200px;
+body > input[type="radio"] {
+  display: none;
+}
+
+.site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/ice-creams-1.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: background-image 0.5s ease,
+    background-color 0.5s ease;
 }
 
 .container {
@@ -53,9 +64,41 @@ a.bright:hover,
   border-bottom-color: #f9cdc4;
 }
 
+input {
+  width: 267px;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #323232;
+  border: 1px solid rgba(70, 70, 70, 0.48);
+
+  border-radius: 3px;
+  min-height: 29px;
+}
+
+input:hover {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 13px;
+
+  border: 2px solid rgba(56, 74, 93, 0.48); 
+}
+
+input:focus {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 13px;
+
+  border: 2px solid rgba(46, 136, 228, 0.48); 
+}
+
 .main-header {
-  margin-top: 10px;
   padding: 0px;
+  padding-top: 10px;
 
   min-height: 35px;
 }
@@ -84,6 +127,10 @@ a.bright:hover,
   font-size: 0;
 }
 
+.main-navigation-first-li:first-child {
+  margin-left: -12px;
+}
+
 .main-navigation li {
   position: relative;
 
@@ -95,10 +142,6 @@ a.bright:hover,
 
   min-height: 18px;
   vertical-align: top;
-}
-
-.main-navigation li:first-child {
-  margin-left: -12px;
 }
 
 .main-navigation a {
@@ -113,11 +156,19 @@ a.bright:hover,
 .main-navigation a:hover,
 .main-navigation a:active {
   margin: 0;
+  margin-right: 1px;
   padding: 7px 15px 6px 15px;
+
+  font-weight: 700;
 
   color: black;
 
   border-radius: 14px;
+}
+
+.main-navigation-first-li a:hover,
+.main-navigation-first-li a:active {
+  margin-right: 0;
 }
 
 .main-navigation a:hover {
@@ -136,8 +187,8 @@ a.bright:hover,
 
 .main-navigation-sub {
   position: absolute;
-  top: 42px;
-  left: -36px;
+  top: 45px;
+  left: -38px;
 
   display: none;
   width: 143px;
@@ -146,10 +197,11 @@ a.bright:hover,
   color: #323232;
   background-color: #f8f7f4;
 
-  border-radius: 4px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
 }
 
-li:hover > .main-navigation-sub {
+li:hover .main-navigation-sub {
   display: block;
 }
 
@@ -187,9 +239,9 @@ li:hover > .main-navigation-sub {
   display: block;
   width: 106px;
   margin: 0;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 22px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
 
   font-size: 14px;
   line-height: 16px;
@@ -202,9 +254,9 @@ li:hover > .main-navigation-sub {
   width: 106px;
   width: 121px;
   margin: 0;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 22px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
 
   background-color: #d07058;
 
@@ -212,12 +264,17 @@ li:hover > .main-navigation-sub {
   box-shadow: none;
 }
 
+.main-navigation-sub a:hover,
+.main-navigation-sub a:active {
+  font-weight: 400;
+}
+
 .main-navigation-sub a:hover {
   width: 106px;
   margin: 0;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 22px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
 
   color: #323232;
   background-color: #fbded7;
@@ -227,9 +284,9 @@ li:hover > .main-navigation-sub {
 
 .main-navigation-sub a:active {
   margin: 0;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 22px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
 
   color: #323232;
   background-color: #f6b5a5;
@@ -239,10 +296,12 @@ li:hover > .main-navigation-sub {
 }
 
 .common-buttons {
+  position: relative;
+
   float: right;
   width: 267px;
   margin-left: 13px;
-  padding: 13px 0px 18px 0px;
+  padding: 13px 0px 0px 0px;
 
   font-size: 0;
 
@@ -280,7 +339,7 @@ li:hover > .main-navigation-sub {
   margin-right: 8px;
 }
 
-.common-buttons .btn:last-child {
+.common-buttons .btn:last-of-type {
   margin-right: 0;
 }
 
@@ -359,11 +418,99 @@ li:hover > .main-navigation-sub {
   margin-right: 0;
 }
 
+.common-buttons-form {
+  position: absolute;
+
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  background-color: #f8f7f4;
+
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.6);
+}
+
+.btn-search:hover ~ .common-buttons-form-search {
+  display: block;
+}
+
+.btn-login:hover ~ .common-buttons-form-login {
+  display: block;
+}
+
+.common-buttons-form input[type="email"],
+.common-buttons-form input[type="password"],
+.common-buttons-form input[type="text"] {
+  font-size: 14px;
+}
+
+.common-buttons-form-search input {
+  width: 294px;
+  margin: 20px 15px;
+}
+
+.common-buttons-form-login input[type="email"],
+.common-buttons-form-login input[type="password"] {
+  width: 223px;
+  margin-bottom: 20px;
+}
+
+.common-buttons-form-search {
+  top: 49px;
+  left: -303px;
+
+  width: 340px;
+
+  min-height: 84px;
+}
+
+.common-buttons-form-login {
+  top: 49px;
+  left: -135px;
+
+  width: 241px;
+  padding: 20px 17px 14px 19px;
+
+  min-height: 174px;
+}
+
+.common-buttons-form-login .btn {
+  display: inline-block;
+  width: 100px;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  color: white;
+
+  min-height: 44px;
+}
+
+.form-login-hrefs {
+  float: right;
+  width: 121px;
+
+  text-align: left;
+}
+
+.form-login-hrefs a {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.form-login-hrefs a:last-child {
+  position: relative;
+
+  top: -6px;
+}
+
 main {
   margin-top: 10px;
 }
 
-main .btn {
+main .btn,
+.common-buttons-form-login .btn {
   text-align: center;
 
   background-image: linear-gradient(#e74a35, #f26843);
@@ -373,14 +520,16 @@ main .btn {
   box-shadow: 0px 2px 2px 0px rgba(85, 8, 0, 0.46);
 }
 
-main .btn:hover {
+main .btn:hover,
+.common-buttons-form-login .btn:hover {
   color: white;
   background-image: linear-gradient(#f58669, #ec6f5e);
 
   box-shadow: 0px 1px 2px 0px #ac1000;
 }
 
-main .btn:active {
+main .btn:active,
+.common-buttons-form-login .btn:active {
   color: white;
   background-image: linear-gradient(#d74632, #e1613e);
 
@@ -437,7 +586,7 @@ main .btn:active {
   margin: 0 auto;
   margin-bottom: 40px;
 
-  font-weight: 800;
+  font-weight: 900;
   font-size: 60px;
   line-height: 60px;
   text-align: center;
@@ -476,13 +625,34 @@ main .btn:active {
   box-shadow: inset 0px 2px 2px 0px #942718;
 }
 
+.slide {
+  display: none;
+}
+
+#btn-1:checked ~ .site-wrapper #slide-1,
+#btn-2:checked ~ .site-wrapper #slide-2,
+#btn-3:checked ~ .site-wrapper #slide-3 {
+  display: block;
+}
+
+#btn-1:checked ~ .site-wrapper {
+  background-color: #849d8f;
+  background-image: url("../img/ice-creams-1.png");
+}
+
+#btn-2:checked ~ .site-wrapper {
+  background-color: #8996a6;
+  background-image: url("../img/ice-creams-2.png");
+}
+
+#btn-3:checked ~ .site-wrapper {
+  background-color: #9d8b84;
+  background-image: url("../img/ice-creams-3.png");
+}
+
 .slide-btns {
   position: absolute;
   bottom: 13px;
-}
-
-.slide-btns input {
-  display: none;
 }
 
 .slide-btns label {
@@ -494,12 +664,17 @@ main .btn:active {
   height: 18px;
   margin-right: 3px;
 
-  border: 2px solid white;
+  background-color: transparent;
+  border: 2px solid #ffffff;
 
   border-radius: 50%;
+  vertical-align: top;
+  cursor: pointer;
 }
 
-.slide-btns label:first-child {
+#btn-1:checked ~ .site-wrapper label[for="btn-1"],
+#btn-2:checked ~ .site-wrapper label[for="btn-2"],
+#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
   background-color: white;
 }
 
@@ -550,6 +725,8 @@ main .btn:active {
 }
 
 .item {
+  position: relative;
+
   display: inline-block;
   float: left;
   width: 267px;
@@ -558,6 +735,22 @@ main .btn:active {
   margin-bottom: 40px;
 
   text-align: center;
+  vertical-align: top;
+}
+
+.index-items .item::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/hit.png");
+
+  z-index: 10;
 }
 
 .item:last-child {
@@ -708,6 +901,7 @@ main .btn:active {
 
   border: 0;
   text-decoration: underline;
+  vertical-align: top;
 }
 
 .index-newsletter {
@@ -742,10 +936,9 @@ main .btn:active {
 
 .index-newsletter input[type="email"] {
   width: 349px;
-  height: 13px;
   margin-right: 4px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 15px;
 
   font-size: 16px;
@@ -753,7 +946,8 @@ main .btn:active {
 
   border: 1px solid rgba(70, 70, 70, 0.48);
 
-  border-radius: 3px;
+  border-radius: 4px;
+  min-height: 13px;
 }
 
 .index-newsletter input[type="submit"] {
@@ -775,7 +969,7 @@ main .btn:active {
   height: 430px;
   margin: 0 auto;
 
-  background-image: url("../img/map.jpg");
+  background-image: url("../img/map-with-marker.jpg");
 }
 
 .index-map p {
@@ -836,6 +1030,7 @@ main .btn:active {
   line-height: 24px;
 
   min-height: 36px;
+  vertical-align: top;
 }
 
 .main-footer {
@@ -853,13 +1048,23 @@ main .btn:active {
 .footer-social a {
   margin-right: 7px;
 
+  font-size: 0;
+
   border: 0;
 }
 
 .footer-social img {  
-  border: 4px solid #c2cec7;
+  width: 31px;
+  height: 31px;
+
+  border: 4px solid rgba(194, 206, 199, 1.0);
 
   border-radius: 50%;
+  opacity: 0.8;
+}
+
+.footer-social img:hover {
+  opacity: 1.0;
 }
 
 .footer-info,
@@ -949,6 +1154,8 @@ main .btn:active {
 
 .breadcrumbs li {
   display: inline-block;
+
+  vertical-align: top;
 }
 
 .breadcrumbs a {
@@ -959,11 +1166,15 @@ main .btn:active {
   margin-bottom: 40px;
 }
 
-.filters > label, fieldset {
+.filters > label,
+fieldset {
   display: inline-block;
   margin-right: 15px;
+
   font-size: 14px;
   line-height: 16px;
+
+  vertical-align: top;
 }
 
 .filters > label:first-child {
@@ -975,7 +1186,10 @@ main .btn:active {
   height: 58px;
 }
 
-select[name="sort"], input[type="range"], .container-buttons, .btn-filter {
+select[name="sort"], 
+input[type="range"], 
+.container-buttons, 
+.btn-filter {
   height: 37px;
 
   font-size: 16px;
@@ -1058,6 +1272,8 @@ label {
   font-size: 16px;
   line-height: 18px;
   text-align: center;
+
+  vertical-align: top;
 }
 
 .catalog-pages a {
@@ -1085,7 +1301,7 @@ h1 {
   margin-bottom: 35px;
 }
 
-/* Удалить */
+/* Delete */
 
 .outline-red {
   outline: 1px solid red;
