@@ -1256,6 +1256,11 @@ main .btn:active,
   color: #e4e9e6;
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+
 .filters {
   margin-bottom: 40px;
 }
