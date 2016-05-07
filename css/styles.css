@@ -867,6 +867,8 @@ main .btn:active,
   top: -102px;
 
   line-height: 22px;
+
+  z-index: 20;
 }
 
 .item-wrap-a {
