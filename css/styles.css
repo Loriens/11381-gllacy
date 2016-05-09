@@ -81,6 +81,14 @@ a.bright:hover,
   border-bottom-color: #f9cdc4;
 }
 
+.input-field {
+  position: relative;
+
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -99,11 +107,11 @@ input[type="password"] {
   min-height: 29px;
 }
 
-input[type="text"]:hover,
-input[type="email"]:hover,
-input[type="password"]:hover {
-  padding-top: 6px;
-  padding-bottom: 5px;
+.input-field:hover input[type="text"]:not(:focus),
+.input-field:hover input[type="email"]:not(:focus),
+.input-field:hover input[type="password"]:not(:focus) {
+  padding-top: 7px;
+  padding-bottom: 6px;
   padding-left: 13px;
 
   border: 2px solid rgba(56, 74, 93, 0.48); 
@@ -117,6 +125,53 @@ input[type="password"]:focus {
   padding-left: 13px;
 
   border: 2px solid rgba(46, 136, 228, 0.48); 
+}
+
+.common-buttons-input-field:hover input:not(:focus):first-of-type {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 13px;
+}
+
+.common-buttons-input-field input:focus:first-of-type {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 13px;
+
+}
+
+input[type="text"] + label,
+input[type="email"] + label,
+input[type="password"] + label {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+
+  display: block;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #999999;
+
+  cursor: text;
+}
+
+input[type="text"]:focus + label,
+input[type="email"]:focus + label,
+input[type="password"]:focus + label {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+
+  font-size: 11px;
+  line-height: 13px;
+
+  color: #5b9ddf;
+}
+
+.common-buttons-input-field label:last-child {
+  font-size: 14px;
 }
 
 .main-header {
@@ -516,19 +571,19 @@ li:hover .main-navigation-sub {
   display: block;
 }
 
-.common-buttons-form input[type="email"],
-.common-buttons-form input[type="password"],
-.common-buttons-form input[type="text"] {
+.common-buttons-form label {
   font-size: 14px;
 }
 
 .common-buttons-form-search input {
   width: 294px;
+}
+
+.common-buttons-form-search .input-field {
   margin: 20px 15px;
 }
 
-.common-buttons-form-login input[type="email"],
-.common-buttons-form-login input[type="password"] {
+.common-buttons-form-login .input-field {
   width: 223px;
   margin-bottom: 20px;
 }
@@ -746,6 +801,11 @@ main .btn:active,
   background-image: linear-gradient(#d74632, #e1613e);
 
   box-shadow: inset 0px 1px 2px 0px #942718;
+}
+
+.common-buttons-form-login input[type="email"],
+.common-buttons-form-login input[type="password"] {
+  width: 226px;
 }
 
 .working-information p {
@@ -1162,13 +1222,18 @@ main .btn:active,
   padding-bottom: 8px;
   padding-left: 15px;
 
-  font-size: 16px;
-  line-height: 24px;
-
   border: 1px solid rgba(70, 70, 70, 0.48);
 
   border-radius: 4px;
   min-height: 13px;
+}
+
+.index-newsletter input[type="email"]:focus {
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 13px;
+
+  border: 2px solid rgba(46, 136, 228, 0.48);
 }
 
 .index-newsletter input[type="submit"] {

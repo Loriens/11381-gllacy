@@ -48,14 +48,20 @@
           <div class="common-button-wrap">
             <a class="btn btn-search" href="#">Поиск</a>
             <div class="common-buttons-form common-buttons-form-search">
-              <input type="text" name="search" placeholder="Что ищем?">
+              <div class="input-field common-buttons-input-field">
+                <input id="search" type="text" name="search"><label for="search">Что ищем?</label>
+              </div>
             </div>
           </div>
           <div class="common-button-wrap">
             <a class="btn btn-login" href="#">Вход</a>
             <div class="common-buttons-form common-buttons-form-login">
-              <input type="email" name="login" placeholder="Электронная почта">
-              <input type="password" name="password" placeholder="Пароль">
+              <div class="input-field common-buttons-input-field">
+                <input id="login" type="email" name="login"><label for="email">Электронная почта</label>
+              </div>
+              <div class="input-field common-buttons-input-field">
+                <input id="password" type="password" name="password"><label for="password">Пароль</label>
+              </div>
               <input class="btn" type="submit" value="Войти">
               <div class="form-login-hrefs">
                 <a class="bright" href="#">Забыли пароль?</a>
@@ -150,7 +156,9 @@
                 <p>Подпишитесь на нашу сладкую рассылку
                 и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                 <form action="#" method="get">
-                  <input type="email" placeholder="Электронная почта">
+                  <div class="input-field">
+                    <input id="email" type="email"><label for="email">Электронная почта</label>
+                  </div>
                   <input class="btn" type="submit" value="Отправить">
                 </form>
               </div>
