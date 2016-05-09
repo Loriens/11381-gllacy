@@ -40,53 +40,59 @@
         </ul>
       </nav>
       <div class="common-buttons">
-        <a class="btn btn-search" href="#">Поиск</a>
-        <a class="btn btn-login" href="#">Вход</a>
-        <a class="btn btn-basket btn-basket-active" href="#">2 товара</a>
-        <div class="common-buttons-form common-buttons-form-search">
-          <input type="text" name="search" placeholder="Что ищем?">
-        </div>
-        <div class="common-buttons-form common-buttons-form-login">
-          <input type="email" name="login" placeholder="Электронная почта">
-          <input type="password" name="password" placeholder="Пароль">
-          <input class="btn" type="submit" value="Войти">
-          <div class="form-login-hrefs">
-            <a class="bright" href="#">Забыли пароль?</a>
-            <a class="bright" href="#">Новая регистрация</a>
+        <div class="common-button-wrap common-button-wrap-search">
+          <a class="btn btn-search" href="#">Поиск</a>
+          <div class="common-buttons-form common-buttons-form-search">
+            <input type="text" name="search" placeholder="Что ищем?">
           </div>
         </div>
-        <div class="common-buttons-form common-buttons-form-basket">
-          <div class="basket-item">
-            <button class="basket-item-delete"></button>
-            <div class="basket-item-title">            
-              <img src="img/catalog/basket-item-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-              Пломбир с апельсиновым джемом
-            </div>
-            <div class="basket-item-count">
-              1,5 кг x <span class="cost-per-kg">200 руб.</span>
-            </div>
-            <div class="basket-item-worth">
-              300 руб.
+        <div class="common-button-wrap common-button-wrap-search">
+          <a class="btn btn-login" href="#">Вход</a>
+          <div class="common-buttons-form common-buttons-form-login">
+            <input type="email" name="login" placeholder="Электронная почта">
+            <input type="password" name="password" placeholder="Пароль">
+            <input class="btn" type="submit" value="Войти">
+            <div class="form-login-hrefs">
+              <a class="bright" href="#">Забыли пароль?</a>
+              <a class="bright" href="#">Новая регистрация</a>
             </div>
           </div>
-          <div class="basket-item basket-item-last">
-            <button class="basket-item-delete"></button>
-            <div class="basket-item-title">            
-              <img src="img/catalog/basket-item-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-              Клубничный пломбир с присыпкой из белого шоколада
+        </div>
+        <div class="common-button-wrap common-button-wrap-search">
+          <a class="btn btn-basket" href="#">Пусто</a>
+          <div class="common-buttons-form common-buttons-form-basket">
+            <div class="basket-item">
+              <button class="basket-item-delete"></button>
+              <div class="basket-item-title">            
+                <img src="img/catalog/basket-item-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                Пломбир с апельсиновым джемом
+              </div>
+              <div class="basket-item-count">
+                1,5 кг x <span class="cost-per-kg">200 руб.</span>
+              </div>
+              <div class="basket-item-worth">
+                300 руб.
+              </div>
             </div>
-            <div class="basket-item-count">
-              1,5 кг x <span class="cost-per-kg">300 руб.</span>
+            <div class="basket-item basket-item-last">
+              <button class="basket-item-delete"></button>
+              <div class="basket-item-title">            
+                <img src="img/catalog/basket-item-2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                Клубничный пломбир с присыпкой из белого шоколада
+              </div>
+              <div class="basket-item-count">
+                1,5 кг x <span class="cost-per-kg">300 руб.</span>
+              </div>
+              <div class="basket-item-worth">
+                450 руб.
+              </div>
             </div>
-            <div class="basket-item-worth">
-              450 руб.
+            <div class="total">
+              Итого: 750 руб.
             </div>
+            <div class="clearfix"></div>
+            <a class="btn" href="#">Оформить заказ</a>
           </div>
-          <div class="total">
-            Итого: 750 руб.
-          </div>
-          <div class="clearfix"></div>
-          <a class="btn" href="#">Оформить заказ</a>
         </div>
       </div>
     </header>
