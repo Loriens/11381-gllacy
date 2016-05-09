@@ -31,11 +31,11 @@ body > input[type="radio"] {
 
 .site-wrapper:before,
 .site-wrapper:after {
-  background-image: url("slide-1.png");
+  background-image: url("../img/ice-creams-2.png");
 }
 
 .site-wrapper:after {
-  background-image: url("slide-2.png");
+  background-image: url("../img/ice-creams-3.png");
 }
 
 .container {
@@ -1860,6 +1860,38 @@ label {
   padding-top: 6px;
   padding-bottom: 5px;
   padding-left: 13px;
+}
+
+.feedback-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+
+  background-color: inherit;
+  background-image: url("../img/X.svg");
+  border: 0;
+}
+
+.feedback-show {
+  display: block;
+}
+
+.overlay-feedback-show {
+  display: block;
+}
+
+.feedback-hide {
+  display: none;
+}
+
+.overlay-feedback-hide {
+  display: none;
 }
 
 h1, h2 {
