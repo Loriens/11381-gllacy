@@ -18,3 +18,16 @@ feedbackClose.addEventListener("click", function(event) {
   feedback.classList.add("feedback-hide");
   overlay.classList.add("overlay-feedback-hide");
 });
+
+
+var inputs = document.querySelectorAll("input[type='text'], input[type='email'], input[type='password']");
+
+for (var i = 0; i < inputs.length; i ++) {
+  inputs[i].addEventListener("keyup", function(event) {
+    if(event.target.value) {
+      event.target.classList.add("label-hide");
+    } else {
+      event.target.classList.remove("label-hide");
+    }
+  });
+}

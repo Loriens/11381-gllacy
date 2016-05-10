@@ -106,11 +106,12 @@ textarea {
 
   border-radius: 3px;
   min-height: 29px;
+  outline: none;
 }
 
-.input-field:hover input[type="text"]:not(:focus),
-.input-field:hover input[type="email"]:not(:focus),
-.input-field:hover input[type="password"]:not(:focus),
+.input-field:hover input[type="text"]:not(.label-hide):not(:focus),
+.input-field:hover input[type="email"]:not(.label-hide):not(:focus),
+.input-field:hover input[type="password"]:not(.label-hide):not(:focus),
 .input-field:hover textarea:not(:focus) {
   padding-top: 7px;
   padding-bottom: 6px;
@@ -119,33 +120,34 @@ textarea {
   border: 2px solid rgba(56, 74, 93, 0.48); 
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
+input[type="text"]:not(.label-hide):focus,
+input[type="email"]:not(.label-hide):focus,
+input[type="password"]:not(.label-hide):focus,
 textarea:focus {
-  padding-top: 6px;
-  padding-bottom: 5px;
+  padding-top: 7px;
+  padding-bottom: 6px;
   padding-left: 13px;
 
   border: 2px solid rgba(46, 136, 228, 0.48); 
 }
 
-.common-buttons-input-field:hover input:not(:focus):first-of-type {
+.common-buttons-input-field:hover input:not(.label-hide):not(:focus):first-of-type,
+.input-field-feedback:hover input:not(.label-hide):not(:focus):first-of-type {
   padding-top: 6px;
   padding-bottom: 5px;
   padding-left: 13px;
 }
 
-.common-buttons-input-field input:focus:first-of-type {
+.common-buttons-input-field input:not(.label-hide):focus:first-of-type,
+.input-field-feedback input:not(.label-hide):focus:first-of-type {
   padding-top: 6px;
   padding-bottom: 5px;
   padding-left: 13px;
-
 }
 
-input[type="text"] + label,
-input[type="email"] + label,
-input[type="password"] + label,
+input[type="text"]:not(.label-hide) + label,
+input[type="email"]:not(.label-hide) + label,
+input[type="password"]:not(.label-hide) + label,
 textarea + label {
   position: absolute;
   top: 10px;
@@ -161,9 +163,9 @@ textarea + label {
   cursor: text;
 }
 
-input[type="text"]:focus + label,
-input[type="email"]:focus + label,
-input[type="password"]:focus + label,
+input[type="text"]:not(.label-hide):focus + label,
+input[type="email"]:not(.label-hide):focus + label,
+input[type="password"]:not(.label-hide):focus + label,
 textarea:focus + label {
   position: absolute;
   top: -15px;
@@ -173,6 +175,44 @@ textarea:focus + label {
   line-height: 13px;
 
   color: #5b9ddf;
+}
+
+.input-field .label-hide:first-child,
+.input-field:hover .label-hide:hover:first-child
+.input-field .label-hide:hover:first-child,
+.input-field .label-hide:focus:first-child, {
+  padding-top: 8px;
+  padding-right: 1px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+
+  border: 1px solid rgba(70, 70, 70, 0.48);
+}
+
+.common-buttons .label-hide:first-child,
+.common-buttons .input-field:hover .label-hide:hover:first-child,
+.common-buttons .label-hide:hover:first-child,
+.common-buttons .label-hide:focus:first-child,
+.input-field-feedback .label-hide:first-child,
+.input-field-feedback:hover .label-hide:hover:first-child
+.input-field-feedback .label-hide:hover:first-child,
+.input-field-feedback .label-hide:focus:first-child {
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+}
+
+input[type="text"].label-hide + label,
+input[type="email"].label-hide + label,
+input[type="password"].label-hide + label {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+
+  font-size: 11px;
+  line-height: 13px;
+
+  color: #999999;
 }
 
 .common-buttons-input-field label:last-child {
@@ -1281,14 +1321,6 @@ main .btn:active,
   min-height: 13px;
 }
 
-.index-newsletter input[type="email"]:focus {
-  padding-top: 6px;
-  padding-bottom: 5px;
-  padding-left: 13px;
-
-  border: 2px solid rgba(46, 136, 228, 0.48);
-}
-
 .index-newsletter input[type="submit"] {
   position: relative;
   left: 6px;
@@ -1903,8 +1935,8 @@ label {
   min-height: 46px;
 }
 
-.input-field-feedback:hover input:not(:focus):first-child,
-.input-field-feedback:hover textarea:not(:focus):first-child {
+.input-field-feedback:hover input[type="text"]:not(.label-hide):not(:focus):hover:first-child !important,
+.input-field-feedback:hover textarea:not(.label-hide):focus:first-child {
   padding-top: 6px;
   padding-bottom: 5px;
   padding-left: 13px;
