@@ -21,6 +21,7 @@ feedbackClose.addEventListener("click", function(event) {
 
 
 var inputs = document.querySelectorAll("input[type='text'], input[type='email'], input[type='password']");
+var textarea = document.querySelector("textarea");
 
 for (var i = 0; i < inputs.length; i ++) {
   inputs[i].addEventListener("keyup", function(event) {
@@ -31,3 +32,11 @@ for (var i = 0; i < inputs.length; i ++) {
     }
   });
 }
+
+textarea.addEventListener("keyup", function(event) {
+  if(event.target.value) {
+    event.target.classList.add("label-hide");
+  } else {
+    event.target.classList.remove("label-hide");
+  }
+});

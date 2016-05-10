@@ -112,7 +112,7 @@ textarea {
 .input-field:hover input[type="text"]:not(.label-hide):not(:focus),
 .input-field:hover input[type="email"]:not(.label-hide):not(:focus),
 .input-field:hover input[type="password"]:not(.label-hide):not(:focus),
-.input-field:hover textarea:not(:focus) {
+.input-field:hover textarea:not(.label-hide):not(:focus) {
   padding-top: 6px;
   padding-bottom: 5px;
   padding-left: 13px;
@@ -123,7 +123,7 @@ textarea {
 input[type="text"]:not(.label-hide):focus,
 input[type="email"]:not(.label-hide):focus,
 input[type="password"]:not(.label-hide):focus,
-textarea:focus {
+textarea:not(.label-hide):focus {
   padding-top: 6px;
   padding-bottom: 5px;
   padding-left: 13px;
@@ -134,7 +134,7 @@ textarea:focus {
 input[type="text"]:not(.label-hide) + label,
 input[type="email"]:not(.label-hide) + label,
 input[type="password"]:not(.label-hide) + label,
-textarea + label {
+textarea:not(.label-hide) + label {
   position: absolute;
   top: 10px;
   left: 15px;
@@ -152,7 +152,7 @@ textarea + label {
 input[type="text"]:not(.label-hide):focus + label,
 input[type="email"]:not(.label-hide):focus + label,
 input[type="password"]:not(.label-hide):focus + label,
-textarea:focus + label {
+textarea:not(.label-hide):focus + label {
   position: absolute;
   top: -15px;
   left: 15px;
@@ -163,21 +163,10 @@ textarea:focus + label {
   color: #5b9ddf;
 }
 
-.input-field .label-hide:first-child,
-.input-field:hover .label-hide:hover:first-child
-.input-field .label-hide:hover:first-child,
-.input-field .label-hide:focus:first-child, {
-  padding-top: 8px;
-  padding-right: 1px;
-  padding-bottom: 7px;
-  padding-left: 14px;
-
-  border: 1px solid rgba(70, 70, 70, 0.48);
-}
-
 input[type="text"].label-hide + label,
 input[type="email"].label-hide + label,
-input[type="password"].label-hide + label {
+input[type="password"].label-hide + label,
+textarea.label-hide + label {
   position: absolute;
   top: -15px;
   left: 15px;
@@ -189,10 +178,23 @@ input[type="password"].label-hide + label {
 }
 
 .input-field-newsletter:hover input:not(.label-hide):not(:focus):hover:first-child,
-.input-field-newsletter input:focus:not(.label-hide):hover:first-child {
+.input-field-newsletter:hover input:not(.label-hide):focus:hover:first-child,
+.input-field-newsletter input:focus:not(.label-hide):first-child {
   padding-top: 7px;
   padding-bottom: 6px;
   padding-left: 13px;
+}
+
+.input-field-newsletter .label-hide:not(:focus):first-child,
+.input-field-newsletter:hover .label-hide:hover:not(:focus):first-child
+.input-field-newsletter .label-hide:hover:first-child,
+.input-field-newsletter .label-hide:focus:first-child  {
+  padding-top: 8px;
+  padding-right: 1px;
+  padding-bottom: 7px;
+  padding-left: 14px;
+
+  border: 1px solid rgba(70, 70, 70, 0.48);
 }
 
 .input-field-newsletter .label-hide:first-child {
