@@ -113,8 +113,8 @@ textarea {
 .input-field:hover input[type="email"]:not(.label-hide):not(:focus),
 .input-field:hover input[type="password"]:not(.label-hide):not(:focus),
 .input-field:hover textarea:not(:focus) {
-  padding-top: 7px;
-  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 5px;
   padding-left: 13px;
 
   border: 2px solid rgba(56, 74, 93, 0.48); 
@@ -124,25 +124,11 @@ input[type="text"]:not(.label-hide):focus,
 input[type="email"]:not(.label-hide):focus,
 input[type="password"]:not(.label-hide):focus,
 textarea:focus {
-  padding-top: 7px;
-  padding-bottom: 6px;
+  padding-top: 6px;
+  padding-bottom: 5px;
   padding-left: 13px;
 
   border: 2px solid rgba(46, 136, 228, 0.48); 
-}
-
-.common-buttons-input-field:hover input:not(.label-hide):not(:focus):first-of-type,
-.input-field-feedback:hover input:not(.label-hide):not(:focus):first-of-type {
-  padding-top: 6px;
-  padding-bottom: 5px;
-  padding-left: 13px;
-}
-
-.common-buttons-input-field input:not(.label-hide):focus:first-of-type,
-.input-field-feedback input:not(.label-hide):focus:first-of-type {
-  padding-top: 6px;
-  padding-bottom: 5px;
-  padding-left: 13px;
 }
 
 input[type="text"]:not(.label-hide) + label,
@@ -189,19 +175,6 @@ textarea:focus + label {
   border: 1px solid rgba(70, 70, 70, 0.48);
 }
 
-.common-buttons .label-hide:first-child,
-.common-buttons .input-field:hover .label-hide:hover:first-child,
-.common-buttons .label-hide:hover:first-child,
-.common-buttons .label-hide:focus:first-child,
-.input-field-feedback .label-hide:first-child,
-.input-field-feedback:hover .label-hide:hover:first-child
-.input-field-feedback .label-hide:hover:first-child,
-.input-field-feedback .label-hide:focus:first-child {
-  padding-top: 7px;
-  padding-bottom: 6px;
-  padding-left: 14px;
-}
-
 input[type="text"].label-hide + label,
 input[type="email"].label-hide + label,
 input[type="password"].label-hide + label {
@@ -213,6 +186,20 @@ input[type="password"].label-hide + label {
   line-height: 13px;
 
   color: #999999;
+}
+
+.input-field-newsletter:hover input:not(.label-hide):not(:focus):hover:first-child,
+.input-field-newsletter input:focus:not(.label-hide):hover:first-child {
+  padding-top: 7px;
+  padding-bottom: 6px;
+  padding-left: 13px;
+}
+
+.input-field-newsletter .label-hide:first-child {
+  padding-top: 7px;
+  padding-right: 1px;
+  padding-bottom: 6px;
+  padding-left: 14px;
 }
 
 .common-buttons-input-field label:last-child {
