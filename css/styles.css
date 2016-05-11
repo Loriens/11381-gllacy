@@ -1405,17 +1405,13 @@ main .btn:active,
   margin-right: 205px;
 }
 
-.footer-social a {
+.footer-social a { 
+  display: inline-block;
+  width: 31px;
+  height: 31px;
   margin-right: 7px;
 
   font-size: 0;
-
-  border: 0;
-}
-
-.footer-social img {  
-  width: 31px;
-  height: 31px;
 
   border: 4px solid rgba(194, 206, 199, 1.0);
 
@@ -1423,9 +1419,33 @@ main .btn:active,
   opacity: 0.8;
 }
 
-.footer-social img:hover {
+.footer-social a:hover {
   opacity: 1.0;
 }
+
+.footer-social a:active {
+  opacity: 1.0;
+  box-shadow: inset 0px 2px 1px #888888;
+}
+
+.footer-social .social-btn-tw {
+  background-image: url("../img/tw.svg");
+}
+
+.footer-social .social-btn-inst {
+  background-image: url("../img/inst.svg");
+}
+
+
+.footer-social .social-btn-fb {
+  background-image: url("../img/fb.svg");
+}
+
+
+.footer-social .social-btn-vk {
+  background-image: url("../img/vk.svg");
+}
+
 
 .footer-info,
 .footer-documents {
