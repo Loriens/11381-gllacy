@@ -1384,6 +1384,8 @@ main .btn:active,
 }
 
 .index-map {
+  position: relative;
+
   width: 1200px;
   height: 430px;
   margin: 0 auto;
@@ -1397,7 +1399,10 @@ main .btn:active,
 }
 
 .index-map-information {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+
   width: 277px;
   margin-top: 63px;
   margin-right: 27px;
