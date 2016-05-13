@@ -1,4 +1,17 @@
-body {
+.example {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -928,7 +941,6 @@ main .btn:active,
 
   display: block;
   width: 216px;
-  height: 31px;
   margin: 0 auto;
   padding: 9px 31px 23px 31px;
 
@@ -945,6 +957,7 @@ main .btn:active,
   border-radius: 50px;
   box-shadow: 0px 2px 2px 0px rgba(67, 6, 0, 0.36);
   text-shadow: 0px 2px 5px #a0200b;
+  min-height: 31px;
 }
 
 .index-main-banner .btn:hover {
@@ -1072,12 +1085,12 @@ main .btn:active,
   display: inline-block;
   float: left;
   width: 267px;
-  height: 322px;
   margin-right: 26px;
   margin-bottom: 40px;
 
   text-align: center;
   vertical-align: top;
+  min-height: 322px;
 }
 
 .item-hover {
@@ -1096,11 +1109,11 @@ main .btn:active,
 }
 
 .item:hover .item-hover {
-  height: 405px;
-
   background-color: rgba(97, 97, 96, 0.3); 
 
   z-index: 50;
+
+  min-height: 405px;
 }
 
 .item:hover .btn-item-hover {
@@ -1680,7 +1693,7 @@ select[name="sort"] {
   margin: 0;
   padding: 8px 22px 7px 11px;
 
-  background-color: inherit;
+  background-color: #a9bab0;
   background-image: url("../img/catalog/marker.svg");
   background-repeat: no-repeat;
   background-position: 170px center;
@@ -2071,7 +2084,9 @@ label {
 .feedback-show {
   display: block;
 
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 0.6s;
+
+          animation: bounce 0.6s;
 }
 
 .overlay-feedback-show {
@@ -2098,17 +2113,40 @@ h1 {
   margin-bottom: 26px;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-200%) translateX(-50%);
+    -webkit-transform: translateY(-200%) translateX(-50%);
+            transform: translateY(-200%) translateX(-50%);
   }
   80%  {
-    transform: translateY(-10%) translateX(-50%);
+    -webkit-transform: translateY(-10%) translateX(-50%);
+            transform: translateY(-10%) translateX(-50%);
   }
   90%  {
-    transform: translateY(-30%) translateX(-50%);
+    -webkit-transform: translateY(-30%) translateX(-50%);
+            transform: translateY(-30%) translateX(-50%);
   }
   100% {
-    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-200%) translateX(-50%);
+            transform: translateY(-200%) translateX(-50%);
+  }
+  80%  {
+    -webkit-transform: translateY(-10%) translateX(-50%);
+            transform: translateY(-10%) translateX(-50%);
+  }
+  90%  {
+    -webkit-transform: translateY(-30%) translateX(-50%);
+            transform: translateY(-30%) translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
   }
 }
