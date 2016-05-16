@@ -1,17 +1,4 @@
-.example {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    background: -webkit-linear-gradient(top, white, black);
-    background: linear-gradient(to bottom, white, black);
-}body {
+body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -472,13 +459,17 @@ li:hover .main-navigation-sub {
   position: relative;
 
   float: right;
-  width: 276px;
+  width: 284px;
   margin-left: 5px;
   padding: 13px 0px 0px 0px;
 
   font-size: 0;
 
   min-height: 34px;
+}
+
+.common-buttons-float {
+  float: right;
 }
 
 .common-buttons .btn {
@@ -504,6 +495,8 @@ li:hover .main-navigation-sub {
   padding: 0;
   margin-right: 10px;
   padding-bottom: 6px;
+
+  font-size: 0;
 
   vertical-align: top;
 }
@@ -942,7 +935,7 @@ main .btn:active,
   display: block;
   width: 216px;
   margin: 0 auto;
-  padding: 9px 31px 23px 31px;
+  padding: 9px 31px 10px 31px;
 
   font-weight: 700;
   font-size: 32px;
@@ -1093,6 +1086,10 @@ main .btn:active,
   min-height: 322px;
 }
 
+.item-hover-content {
+  margin-bottom: -22px;
+}
+
 .item-hover {
   position: absolute;
   top: -5px;
@@ -1113,13 +1110,15 @@ main .btn:active,
 
   z-index: 50;
 
-  min-height: 405px;
+  min-height: 353px;
 }
 
 .item:hover .btn-item-hover {
   display: inline-block;
 
   vertical-align: top;
+
+  z-index: 55;
 }
 
 .btn-item-hover {
@@ -1390,7 +1389,7 @@ main .btn:active,
   height: 430px;
   margin: 0 auto;
 
-  background-color: inherit; 
+  background-color: #e9e1c2; 
   background-image: url("../img/map-with-marker.jpg");
 }
 
@@ -2116,6 +2115,12 @@ h1, h2 {
 
 h1 {
   margin-bottom: 26px;
+}
+
+iframe {
+   width: 1200px;
+   height: 430px;
+   border: 0;
 }
 
 @-webkit-keyframes bounce {
