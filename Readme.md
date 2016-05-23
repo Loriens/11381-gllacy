@@ -7,4 +7,4 @@
 I've finished the course "Basic intensive" in [HTML Academy](https://htmlacademy.ru). The project is a result of my work on this course.
 
 # Website
-You can test this site on https://loriens.github.io/Pomodoro-Timer.
+You can test this site on https://loriens.github.io/11381-gllacy/.
