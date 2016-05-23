@@ -625,9 +625,12 @@ li:hover .main-navigation-sub {
   display: block;
 }
 
+/*
+ IT DOESN'T WORK!
 .common-buttons-form label {
   font-size: 14px;
 }
+*/
 
 .common-buttons-form-search input {
   width: 294px;
@@ -644,7 +647,7 @@ li:hover .main-navigation-sub {
 
 .common-buttons-form-search {
   top: 49px;
-  left: -303px;
+  left: -285px;
 
   width: 340px;
 
@@ -653,7 +656,7 @@ li:hover .main-navigation-sub {
 
 .common-buttons-form-login {
   top: 49px;
-  left: -135px;
+  left: -117px;
 
   width: 241px;
   padding: 20px 17px 14px 19px;
