@@ -1304,6 +1304,7 @@ main .btn:active,
   background-image: url("../img/new-post-strawberry.png");
 
   min-height: 198px;
+  border-radius: 11px;
 }
 
 .index-new-post p {
