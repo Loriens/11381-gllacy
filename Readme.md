@@ -8,3 +8,6 @@ I've finished the course ["Basic intensive"](https://htmlacademy.ru/intensive/ht
 
 # Website
 You can test this site on https://loriens.github.io/gllacy/.
+
+# Certificate
+![](img/certificate.jpg)
